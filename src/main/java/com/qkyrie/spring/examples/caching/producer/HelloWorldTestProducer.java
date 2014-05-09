@@ -18,6 +18,7 @@ import javax.annotation.PostConstruct;
 @Profile("test")
 @Configuration
 public class HelloWorldTestProducer {
+
     private Log LOG = LogFactory.getLog(HelloWorldTestProducer.class);
 
 

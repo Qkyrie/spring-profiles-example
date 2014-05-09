@@ -16,8 +16,8 @@
 
 package com.qkyrie.spring.examples.caching;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
@@ -26,8 +26,8 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan
 public class ProfileApplication {
 	public static void main(String[] args) throws Exception {
-        SpringApplication application = new SpringApplication(ProfileApplication.class);
-        application.setAdditionalProfiles("test");
-        application.run(args);
+        new SpringApplicationBuilder(ProfileApplication.class)
+                .profiles("test")
+                .run(args);
     }
 }
