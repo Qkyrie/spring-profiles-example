@@ -1,4 +1,4 @@
-package com.qkyrie.spring.examples.caching.producer;
+package com.qkyrie.spring.examples.profiles.producer;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -20,7 +20,6 @@ import javax.annotation.PostConstruct;
 public class HelloWorldTestProducer {
 
     private Log LOG = LogFactory.getLog(HelloWorldTestProducer.class);
-
 
     @PostConstruct
     public void init() {

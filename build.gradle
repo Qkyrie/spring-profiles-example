@@ -31,8 +31,9 @@ repositories {
 
 dependencies {
 	compile("org.springframework.boot:spring-boot-starter")
-	testCompile("org.springframework.boot:spring-boot-starter-test")
     compile("org.apache.commons:commons-lang3:3.0")
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+    testCompile('org.easytesting:fest-assert:1.4')
 }
 
 task wrapper(type: Wrapper) {

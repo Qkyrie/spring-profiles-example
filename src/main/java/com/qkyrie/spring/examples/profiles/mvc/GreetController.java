@@ -1,4 +1,4 @@
-package com.qkyrie.spring.examples.caching.mvc;
+package com.qkyrie.spring.examples.profiles.mvc;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -33,6 +33,10 @@ public class GreetController implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         LOG.info(String.format("You can say whatever you like, but based on the active profiles (%s) I can only say: %s", getFormattedActiveProfiles(), helloWorld));
+    }
+
+    public String getHelloWorld() {
+        return helloWorld;
     }
 
     private String getFormattedActiveProfiles() {
