@@ -1,6 +1,7 @@
-package com.qkyrie.spring.examples.profiles;
+package com.deswaef.spring.examples.profiles;
 
-import com.qkyrie.spring.examples.profiles.mvc.GreetController;
+import com.deswaef.spring.examples.profiles.ProfileApplication;
+import com.deswaef.spring.examples.profiles.mvc.GreetController;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,15 +19,17 @@ import static org.fest.assertions.Assertions.assertThat;
  * @author Quinten De Swaef
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ActiveProfiles("test")
+@ActiveProfiles("production")
 @ContextConfiguration(classes = {ProfileApplication.class})
-public class TestProfileApplicationTest {
+public class ProductionProfileApplicationTest {
 
     @Autowired
     private GreetController greetController;
 
     @Test
     public void correctProducerHasBeenDeployed() {
-        assertThat(greetController.getHelloWorld()).isEqualTo("Hello test world!");
+        assertThat(greetController.getHelloWorld()).isEqualTo("Hello production world!");
     }
+
+
 }

@@ -1,4 +1,4 @@
-package com.qkyrie.spring.examples.profiles.mvc;
+package com.deswaef.spring.examples.profiles.mvc;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

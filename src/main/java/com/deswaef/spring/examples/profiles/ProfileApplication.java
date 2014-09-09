@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.qkyrie.spring.examples.profiles;
+package com.deswaef.spring.examples.profiles;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;

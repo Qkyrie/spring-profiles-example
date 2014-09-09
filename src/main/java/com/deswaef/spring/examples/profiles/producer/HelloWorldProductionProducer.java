@@ -1,4 +1,4 @@
-package com.qkyrie.spring.examples.profiles.producer;
+package com.deswaef.spring.examples.profiles.producer;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
