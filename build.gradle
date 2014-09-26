@@ -4,14 +4,13 @@ buildscript {
         mavenLocal()
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.0.2.RELEASE")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.1.7.RELEASE")
     }
 }
 
 
 
 apply plugin: 'java'
-apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'spring-boot'
 
@@ -38,4 +37,8 @@ dependencies {
 
 task wrapper(type: Wrapper) {
 	gradleVersion = '1.11'
+}
+
+task "fullBuild" {
+    dependsOn "cleanTest", "test", "check", "build"
 }
